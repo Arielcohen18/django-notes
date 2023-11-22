@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+<main class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 py-5">
+      <form class="card card-body" method="POST">
+        {{error}}
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="title">Equipo1 </label>
+            <textarea            
+            name="title"
+            id="title"
+            class="form-control">{{task.title}}
+          </textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="club2">Equipo2 </label>
+          <textarea            
+           name="club2"
+          id="club2"
+          class="form-control">{{task.club2}}
+        </textarea>
+        </div>
+        <div class="mb-3">
+          <label for="fecha">Fecha </label>
+          <textarea            
+           name="fecha"
+          id="fecha"
+          class="form-control">{{task.fecha}}
+        </textarea>
+        </div>
+        <div class="mb-3">
+          <label for="golesclub">Goles {{task.title}} </label>
+          <input
+            type="number"
+            name="golesclub"
+            id="golesclub"
+            class="form-control"
+            placeholder={{task.golesclub}}
+            {{task.golesclub}}>
+        </div> 
+        <div class="mb-3">
+          <label for="golesclub">Goles {{task.club2}} </label>
+          <input
+            type="number"
+            name="golesclub2"
+            id="golesclub2"
+            class="form-control"
+            placeholder= {{task.golesclub2}}
+            
+            {{task.golesclub2}}>
+        </div> 
+      
+        
+      
+        <button class="btn btn-primary">Update</button>
+        
+      </form>
+      
+      <form class="card card-body" action="{% url 'complete_task' task.id %}" method="POST">
+        {% csrf_token %}
+        <button class="btn btn-primary" >
+          complete
+        </button>
+      </form>
+      
+      <form class="card card-body" action="{% url 'delete_task' task.id %}" method="POST">
+        {% csrf_token %}
+        <button class="btn btn-primary">
+          delete
+        </button>
+      </form>
+    </div>
+  </div>
+</main>
+
+
+{% endblock %}
