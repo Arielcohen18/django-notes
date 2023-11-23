@@ -3,8 +3,6 @@ Hockeypage donde uno puede ver fecha por jugar y fechas ya jugadas
 
 # Changelog
 
-All the important changes will be shown here
-
 ## [1.0.0] (23/6/23)
 ### Agregado
 
@@ -12,12 +10,12 @@ All the important changes will be shown here
 
 ### Cambios
 
-- cambio de diseño
+- Cambio de diseño
 
 ## [1.0.1] (27/8/23)
 ### Agregado
 
-- crud
+- Crud
 
 ### Cambios
 
@@ -27,14 +25,14 @@ All the important changes will be shown here
 ## [1.0.2] (2/11/23)
 ### Agregado
 
-- agregue vista de login y register
+- Vista de login y register
 
 ### Arreglos
 
-- Arregle el crud que no guardaba bien la informacion 
+- El crud que no guardaba bien la informacion 
 
 ## [1.0.3] (23/11/23)
-### Added
+### Agregado
 
-- agregue vista del crud
+- Vista del crud
 
