@@ -19,7 +19,7 @@ Hockeypage donde uno puede ver fecha por jugar y fechas ya jugadas
 
 ### Cambios
 
-- Cambie el navbar viejo
+- El navbar viejo
 
 
 ## [1.0.2] (2/11/23)
